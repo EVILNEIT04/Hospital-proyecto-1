@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bqdweqa66bvmi"]
 
 [ext_resource type="Texture2D" uid="uid://daful5f187qav" path="res://imagenes/Gemini_Generated_Image_ju9qntju9qntju9q.png" id="1_67bck"]
-[ext_resource type="Texture2D" uid="uid://07m6di6a0awi" path="res://imagenes/Captura de pantalla 2026-04-12 115359.png" id="2_67bck"]
+[ext_resource type="Script" uid="uid://dv0vausigfhuh" path="res://escenas/button.gd" id="2_67bck"]
 
 [node name="Juego" type="Node2D" unique_id=1963292173]
 
@@ -14,17 +14,11 @@ position = Vector2(575.25, 324.5)
 scale = Vector2(0.40891334, 0.41861978)
 texture = ExtResource("1_67bck")
 
-[node name="Cuadro de texto" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=513119461]
-position = Vector2(584.00006, 543)
-scale = Vector2(3.1121264, 1.0675676)
-texture = ExtResource("2_67bck")
-
-[node name="TextEdit" type="TextEdit" parent="ParallaxBackground/ParallaxLayer" unique_id=300152374]
-offset_left = 144.0
-offset_top = 499.0
-offset_right = 1020.0
-offset_bottom = 584.0
-theme_override_font_sizes/font_size = 20
-text = "\"Este hospital siempre ha sido un referente de salud... pero por dentro, era un desastre. 
-Probando Pull Request -Sarel\"
-"
+[node name="Button" type="Button" parent="." unique_id=1620601153]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 1150.0
+offset_bottom = 641.0
+theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0.8745098, 1)
+script = ExtResource("2_67bck")
