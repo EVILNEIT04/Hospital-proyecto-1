@@ -10,16 +10,16 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "Director",
-&"description": "",
-&"display_name": "Director",
+&"default_portrait": "Paciente",
+&"description": "Paciente enojado",
+&"display_name": "Paciente",
 &"mirror": false,
-&"nicknames": [""],
+&"nicknames": ["Paciente"],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"Director": {
+"Paciente": {
 "export_overrides": {
-"image": "\"res://imagenes/46 sin título_20260427102833.png\""
+"image": "\"res://imagenes/Gemini_Generated_Image_7q5vd7q5vd7q5vd7-Photoroom.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
