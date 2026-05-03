@@ -1,0 +1,7 @@
+join Personajes (Director) center
+Personajes (Director): Director\: "Llegas justo a tiempo. Soy el Dr. Arana. Supongo que ya sabes por qué los pasillos están vacíos."
+Personajes (Director): Director\: "La administración anterior dejó una herida profunda. Los pacientes tienen miedo de venir y los que vienen, entran a la defensiva."
+Personajes (Director): Director\: "Tu primera tarea no es curar una enfermedad... es curar la reputación de este lugar."
+join Personajes (Paciente) center
+Personajes (Paciente): "¡Otra vez la misma historia! Llevo una hora esperando y nadie en recepción sabe dónde está mi orden de laboratorio."\
+Paciente\: "Seguro los inútiles que estaban antes la tiraron a la basura. ¡Este hospital es una burla!"
