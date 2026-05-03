@@ -22,6 +22,7 @@ Dialogic="*uid://ds2q0uclmolvu"
 [dialogic]
 
 directories/dch_directory={
+"Paciente": "res://Paciente.dch",
 "Personajes": "res://Personajes.dch"
 }
 directories/dtl_directory={
