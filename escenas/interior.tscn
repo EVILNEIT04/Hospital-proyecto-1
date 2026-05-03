@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d0g4oq7dobwek"]
 
 [ext_resource type="Texture2D" uid="uid://cprhu4i2btyjk" path="res://imagenes/Gemini_Generated_Image_uq51l1uq51l1uq51 (1).png" id="1_bfrxr"]
-[ext_resource type="Texture2D" uid="uid://b3aw1c13jji1i" path="res://imagenes/46 sin título_20260427102833.png" id="2_lumvf"]
+[ext_resource type="Script" uid="uid://evikq7ruifvc" path="res://escenas/button2.gd" id="2_lumvf"]
 
 [node name="Node2D" type="Node2D" unique_id=971530972]
 
@@ -14,7 +14,8 @@ position = Vector2(576.99994, 324.49997)
 scale = Vector2(0.40553975, 0.4160156)
 texture = ExtResource("1_bfrxr")
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground" unique_id=117336095]
-position = Vector2(571, 406)
-scale = Vector2(0.17974138, 0.19206537)
-texture = ExtResource("2_lumvf")
+[node name="Button" type="Button" parent="." unique_id=710517702]
+modulate = Color(1, 1, 1, 0)
+offset_right = 1148.0
+offset_bottom = 644.0
+script = ExtResource("2_lumvf")

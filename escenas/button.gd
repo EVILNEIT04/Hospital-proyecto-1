@@ -23,6 +23,3 @@ func _al_terminar_dialogo():
 		get_tree().change_scene_to_file("res://escenas/interior.tscn")
 	else:
 		print("Error: No has definido la ruta de la siguiente escena en el Inspector.")
-	
-
-	
