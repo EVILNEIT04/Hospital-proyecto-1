@@ -28,7 +28,8 @@ directories/dch_directory={
 directories/dtl_directory={
 "TestingTimeline": "res://DLEscena/TestingTimeline.dtl",
 "timeline": "res://timeline.dtl",
-"timeline2": "res://timeline2.dtl"
+"timeline2": "res://timeline2.dtl",
+"timeline3": "res://timeline3.dtl"
 }
 layout/style_directory={}
 glossary/default_case_sensitive=true

@@ -2,7 +2,7 @@ extends Button
 
 @export var nombre_timeline: String = "timeline2"
 
-func _ready() -> void:
+func _ready() -> void: 
 	# Conectamos la señal de forma segura
 	if not pressed.is_connected(_al_tocar_boton):
 		pressed.connect(_al_tocar_boton)
