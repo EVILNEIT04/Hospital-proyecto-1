@@ -17,5 +17,5 @@ Personajes (Director): "Ahí tienes tu primer desafío. Demuéstrale que las cos
 	Personajes (Paciente): (El paciente guarda silencio, esperando ver si cumples tu palabra.)
 - Autoritario
 	"Señor, guarde silencio. Los que cometieron esos errores ya no trabajan aquí. Yo estoy a cargo ahora."
-	join Personajes (Paciente) center
+	join Paciente center
 	Paciente (Paciente): (El ambiente se pone más tenso; el paciente siente que eres igual de arrogante que los anteriores.)
