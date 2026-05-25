@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://bxb8damcpsl00"]
+
+[ext_resource type="Texture2D" uid="uid://cg0b7ng6wa4pk" path="res://ChatGPT Image 10 may 2026, 09_58_59 p.m..png" id="1_4gcip"]
+[ext_resource type="Texture2D" uid="uid://dyqbmdw6f4x4e" path="res://WhatsApp_Image_2026-04-08_at_9.41.59_AM-removebg-preview.png" id="2_rgf6i"]
+[ext_resource type="Script" uid="uid://dloj36toxwguy" path="res://buttondevolveraestante.gd" id="3_gpoy0"]
+[ext_resource type="Texture2D" uid="uid://brny66c846g7f" path="res://WhatsApp_Image_2026-05-16_at_12.28.22_AM-removebg-preview.png" id="4_gpoy0"]
+[ext_resource type="Script" uid="uid://chg4g0c27a642" path="res://escenas/boton5.gd" id="5_7wex2"]
+[ext_resource type="Texture2D" uid="uid://c4dsvnqnyto6s" path="res://carga/100.png" id="6_pits8"]
+[ext_resource type="Script" uid="uid://bj3p4vyrar65p" path="res://escenas/carga.gd" id="7_ehbtc"]
+
+[node name="Node2D" type="Node2D" unique_id=604476488]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=572885158]
+position = Vector2(585.00006, 319)
+scale = Vector2(0.78351206, 0.60910815)
+texture = ExtResource("1_4gcip")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1828201026]
+
+[node name="Button" type="Button" parent="." unique_id=204968919]
+offset_left = -24.999998
+offset_top = 257.0
+offset_right = 483.0
+offset_bottom = 765.0
+scale = Vector2(0.5546918, 0.53461194)
+icon = ExtResource("2_rgf6i")
+flat = true
+script = ExtResource("3_gpoy0")
+
+[node name="Button2" type="Button" parent="." unique_id=477358238]
+offset_left = 448.0
+offset_top = -4.9999995
+offset_right = 956.0
+offset_bottom = 503.0
+scale = Vector2(0.44248042, 0.25553972)
+icon = ExtResource("4_gpoy0")
+flat = true
+script = ExtResource("5_7wex2")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=795070702]
+position = Vector2(156.00002, 149.99998)
+scale = Vector2(0.40365237, 0.57251906)
+texture = ExtResource("6_pits8")
+
+[node name="carga" type="Sprite2D" parent="." unique_id=728949726]
+position = Vector2(145, 27)
+scale = Vector2(0.40554154, 0.5057252)
+texture = ExtResource("6_pits8")
+script = ExtResource("7_ehbtc")
+
+[node name="carga2" type="Sprite2D" parent="." unique_id=229625901]
+position = Vector2(150, 89)
+scale = Vector2(0.40554154, 0.5057252)
+texture = ExtResource("6_pits8")
+script = ExtResource("7_ehbtc")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]

@@ -1,6 +1,6 @@
 extends Button
 
-@export var nombre_timeline: String = "timeline2"
+@export var nombre_timeline: String = "timeline1"
 
 func _ready() -> void: 
 	# Conectamos la señal de forma segura

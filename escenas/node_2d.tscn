@@ -1,24 +1,55 @@
 [gd_scene format=3 uid="uid://bqdweqa66bvmi"]
 
 [ext_resource type="Texture2D" uid="uid://daful5f187qav" path="res://imagenes/Gemini_Generated_Image_ju9qntju9qntju9q.png" id="1_67bck"]
-[ext_resource type="Script" uid="uid://dv0vausigfhuh" path="res://escenas/button.gd" id="2_67bck"]
+[ext_resource type="Script" uid="uid://cr34jdfak8km4" path="res://escenas/button1.gd" id="2_67bck"]
+[ext_resource type="Texture2D" uid="uid://brny66c846g7f" path="res://WhatsApp_Image_2026-05-16_at_12.28.22_AM-removebg-preview.png" id="3_00qvt"]
+[ext_resource type="Script" uid="uid://b1i3h0jyi7wx5" path="res://escenas/botonpausa.gd" id="4_g5y43"]
+[ext_resource type="Texture2D" uid="uid://dyqbmdw6f4x4e" path="res://WhatsApp_Image_2026-04-08_at_9.41.59_AM-removebg-preview.png" id="5_g5y43"]
+[ext_resource type="Script" uid="uid://cggh2fs4tvd1o" path="res://escenas/buttoninterior.gd" id="6_cey3t"]
+[ext_resource type="AudioStream" uid="uid://oyohjheiljmf" path="res://musica/audio.mp3 (online-audio-converter.com).mp3" id="7_00qvt"]
 
 [node name="Juego" type="Node2D" unique_id=1963292173]
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=130114240]
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=196136423]
+stream = ExtResource("7_00qvt")
+autoplay = true
+parameters/looping = true
+metadata/muica = false
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1437796080]
-
-[node name="Fondo" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=1031127495]
+[node name="Fondo" type="Sprite2D" parent="." unique_id=1031127495]
 position = Vector2(575.25, 324.5)
 scale = Vector2(0.40891334, 0.41861978)
 texture = ExtResource("1_67bck")
 
-[node name="Button" type="Button" parent="." unique_id=1620601153]
+[node name="Button" type="Button" parent="Fondo" unique_id=1620601153]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 3.0
-offset_top = 3.0
-offset_right = 1150.0
-offset_bottom = 641.0
+offset_left = -1399.4407
+offset_top = -768.00006
+offset_right = -252.44067
+offset_bottom = -130.00006
 theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0.8745098, 1)
 script = ExtResource("2_67bck")
+
+[node name="Button2" type="Button" parent="Fondo" unique_id=1254769971]
+offset_left = 180.35608
+offset_top = -770.38885
+offset_right = 700.98303
+offset_bottom = -13.01532
+scale = Vector2(-0.72091275, 0.44633758)
+icon = ExtResource("3_00qvt")
+flat = true
+script = ExtResource("4_g5y43")
+
+[node name="Button3" type="Button" parent="Fondo" unique_id=1630488390]
+offset_left = 1493.5931
+offset_top = 400.12445
+offset_right = 2001.5931
+offset_bottom = 1041.0837
+rotation = 3.1173506
+scale = Vector2(1.2715657, 0.88210404)
+icon = ExtResource("5_g5y43")
+flat = true
+script = ExtResource("6_cey3t")
+
+[connection signal="pressed" from="Fondo/Button2" to="Fondo/Button2" method="_on_pressed"]
+[connection signal="pressed" from="Fondo/Button3" to="Fondo/Button3" method="_on_pressed"]

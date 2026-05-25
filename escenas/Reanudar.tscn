@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dhd4mamnn8rfq" path="res://Scripts/menu.gd" id="1_xcr5u"]
 [ext_resource type="Texture2D" uid="uid://dunp6ap4iupal" path="res://imagenes/WhatsApp Image 2026-04-01 at 4.50.30 PM.jpeg" id="2_45icr"]
+[ext_resource type="AudioStream" uid="uid://oyohjheiljmf" path="res://musica/audio.mp3 (online-audio-converter.com).mp3" id="3_45icr"]
 
 [node name="Menu" type="Control" unique_id=1429924168]
 layout_mode = 3
@@ -30,6 +31,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1, 0.9621451)
 texture = ExtResource("2_45icr")
 expand_mode = 1
 
@@ -63,6 +65,12 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 50
 text = "Salir
 "
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1586190812]
+stream = ExtResource("3_45icr")
+autoplay = true
+parameters/looping = true
+metadata/muica = false
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
