@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://y8wlkm3kjpj1"]
+
+[ext_resource type="Script" uid="uid://djs1ud1vyf2b0" path="res://scripts/consultoriodialogo.gd" id="1_pbob8"]
+[ext_resource type="Texture2D" uid="uid://7ou8453t85bf" path="res://imagenes fondo/ChatGPT Image 24 may 2026, 12_30_47 p.m..png" id="1_qsuyc"]
+[ext_resource type="Texture2D" uid="uid://bmkggepg1mx34" path="res://sprites personajes/WhatsApp Image 2026-05-10 at 6.50.04 PM copia.png" id="2_vi0of"]
+[ext_resource type="Texture2D" uid="uid://dt1kmd5u17kqx" path="res://imagenes fondo/ChatGPT Image 24 may 2026, 12_30_47 p.m. copia.png" id="3_pbob8"]
+[ext_resource type="Texture2D" uid="uid://oreorxxiqgog" path="res://sprites botones/2.png" id="5_j3la6"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1419192659]
+script = ExtResource("1_pbob8")
+
+[node name="fondo" type="Sprite2D" parent="." unique_id=416214839]
+position = Vector2(578.5, 329.5)
+scale = Vector2(0.77269673, 0.61531186)
+texture = ExtResource("1_qsuyc")
+
+[node name="WhatsAppImage20260510At6_50_04PmCopia" type="Sprite2D" parent="." unique_id=91448817]
+position = Vector2(574, 406)
+scale = Vector2(0.82800895, 0.61358386)
+texture = ExtResource("2_vi0of")
+
+[node name="Sinfondo" type="Sprite2D" parent="." unique_id=1120897374]
+position = Vector2(574, 332)
+scale = Vector2(0.77404165, 0.6086957)
+texture = ExtResource("3_pbob8")
+
+[node name="cuadrodetexo" type="Sprite2D" parent="." unique_id=211261382]
+position = Vector2(586, 130)
+scale = Vector2(2.5866446, 1)
+texture = ExtResource("5_j3la6")
+
+[node name="Button" type="Button" parent="." unique_id=551080504]
+offset_right = 1150.0
+offset_bottom = 650.0
+flat = true
+
+[node name="Button2" type="Button" parent="." unique_id=918296891]
+offset_right = 1148.0
+offset_bottom = 647.0
+flat = true
+
+[node name="Panel" type="Panel" parent="." unique_id=1198404112]
+light_mask = 3
+offset_left = 53.0
+offset_top = 72.0
+offset_right = 1109.0
+offset_bottom = 196.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=993402193]
+light_mask = 2
+layout_mode = 0
+offset_left = 42.0
+offset_top = 55.0
+offset_right = 1084.0
+offset_bottom = 108.0

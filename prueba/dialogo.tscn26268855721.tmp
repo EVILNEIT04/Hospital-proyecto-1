@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bx45ydfbjjqm2"]
+
+[ext_resource type="Script" uid="uid://br3gpf54gero" path="res://scripts/dialogo.gd" id="1_bmcfg"]
+
+[node name="Dialogo" type="CanvasLayer" unique_id=533898102]
+script = ExtResource("1_bmcfg")
+
+[node name="Panel" type="Panel" parent="." unique_id=1975413216]
+offset_top = 497.0
+offset_right = 1154.0
+offset_bottom = 647.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=233060202]
+layout_mode = 0
+offset_left = 237.0
+offset_top = 26.0
+offset_right = 911.0
+offset_bottom = 123.0
+autowrap_mode = 2
+
+[node name="BotonDialogo" type="Button" parent="." unique_id=1855891152]
+offset_top = -1.0
+offset_right = 1153.0
+offset_bottom = 641.0
+flat = true
+
+[node name="BotonEscena" type="Button" parent="." unique_id=961277354]
+visible = false
+offset_right = 1149.0
+offset_bottom = 641.0
+flat = true
+
+[connection signal="pressed" from="BotonEscena" to="BotonEscena" method="_on_pressed"]

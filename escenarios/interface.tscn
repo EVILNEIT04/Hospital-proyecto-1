@@ -1,0 +1,266 @@
+[gd_scene format=3 uid="uid://bsfi0bbgwrkxd"]
+
+[ext_resource type="Texture2D" uid="uid://bew7fy82mteig" path="res://imagenes fondo/7a7fbf85-55a3-4ce4-ac3b-3260d7efbf99.png" id="1_cm38g"]
+[ext_resource type="Script" uid="uid://bgwyu24q537l" path="res://scripts/tutorialbotondeinterface.gd" id="2_85ejk"]
+[ext_resource type="Script" uid="uid://yqoul65vqojv" path="res://scripts/nuevapartida.gd" id="2_bfjb8"]
+[ext_resource type="Texture2D" uid="uid://d1jymfbv02bqn" path="res://sprites botones/ChatGPT Image 23 may 2026, 03_35_54 p.m..png" id="2_orb6n"]
+[ext_resource type="Texture2D" uid="uid://xkulbldj7hww" path="res://sprites botones/ChatGPT Image 23 may 2026, 04_59_01 p.m. copia.png" id="4_d51r0"]
+[ext_resource type="Script" uid="uid://hiyxcs41eumv" path="res://scripts/salir.gd" id="6_5r4mj"]
+[ext_resource type="Texture2D" uid="uid://5dgdp6i4ridh" path="res://sprites del carro/carro1.png" id="7_k1r4p"]
+[ext_resource type="Texture2D" uid="uid://bd3p0rfjalige" path="res://sprites del carro/ChatGPT Image 25 may 2026, 10_00_12 p.m. copia.png" id="8_pnh34"]
+[ext_resource type="Texture2D" uid="uid://mwaee4iu2i75" path="res://sprites botones/ChatGPT Image 26 may 2026, 12_07_06 a.m..png" id="9_bemlw"]
+[ext_resource type="Texture2D" uid="uid://bdie0onpcgrky" path="res://sprites del carro/carro 3.png" id="9_r03te"]
+[ext_resource type="Texture2D" uid="uid://dyjlnt0reafs4" path="res://sprites personajes/doctor moviento/1.png" id="11_3gyrp"]
+[ext_resource type="Texture2D" uid="uid://cajvi4qtchro7" path="res://sprites personajes/doctor moviento/2.png" id="12_o5t5y"]
+[ext_resource type="Texture2D" uid="uid://ntsps1tsovxn" path="res://sprites personajes/doctor moviento/3.png" id="13_cda66"]
+[ext_resource type="Texture2D" uid="uid://b0y62c6uit40g" path="res://sprites del carro/1AMBULANCIAA.png" id="14_o5t5y"]
+
+[sub_resource type="Animation" id="Animation_bemlw"]
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.13333334, 0.5, 1.2333333, 2.0666666, 2.8666666),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1186, 584), Vector2(-81, 581), Vector2(-82, 680), Vector2(1312, 693), Vector2(1259, 587)]
+}
+
+[sub_resource type="Animation" id="Animation_r03te"]
+resource_name = "carro2"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.06666666, 1.5333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1162, 579), Vector2(-84, 588)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dbn3w"]
+_data = {
+&"RESET": SubResource("Animation_bemlw"),
+&"carro2": SubResource("Animation_r03te")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lqvlu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_3gyrp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_o5t5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_cda66")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_ed20e"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(28, 462.00003)]
+}
+
+[sub_resource type="Animation" id="Animation_6dsku"]
+resource_name = "doctorcaminando"
+length = 7.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 6.866667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(28, 462.00003), Vector2(1124, 454)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cls6s"]
+_data = {
+&"RESET": SubResource("Animation_ed20e"),
+&"doctorcaminando": SubResource("Animation_6dsku")
+}
+
+[sub_resource type="Animation" id="Animation_5r4mj"]
+resource_name = "carro 1 "
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.76666665, 1.5, 2.2, 2.8666666),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-86.99991, 541.99994), Vector2(1255.9999, 532.99994), Vector2(1239, 720.99994), Vector2(-74.99988, 688), Vector2(-86.99991, 541.99994)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3.136059]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bemlw"]
+_data = {
+&"carro 1 ": SubResource("Animation_5r4mj")
+}
+
+[sub_resource type="Animation" id="Animation_dbn3w"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(398.5, 570.25)]
+}
+
+[sub_resource type="Animation" id="Animation_3gyrp"]
+resource_name = "carro3"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.06666667, 0.5, 0.8666667, 1.3666667, 1.8666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(398.5, 570.25), Vector2(-124, 592), Vector2(-90, 734), Vector2(1299.9999, 744), Vector2(1570.0001, 583)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_o5t5y"]
+_data = {
+&"RESET": SubResource("Animation_dbn3w"),
+&"carro3": SubResource("Animation_3gyrp")
+}
+
+[node name="Node2D" type="Node2D" unique_id=956743982]
+light_mask = 2
+position = Vector2(-8, 13)
+
+[node name="fondo" type="Sprite2D" parent="." unique_id=244488157]
+position = Vector2(583, 311.99997)
+scale = Vector2(0.74999994, 0.63476557)
+texture = ExtResource("1_cm38g")
+
+[node name="nuevapartida" type="Button" parent="." unique_id=1340748324]
+offset_left = 18.0
+offset_top = 133.0
+offset_right = 726.0
+offset_bottom = 438.0
+scale = Vector2(0.43896064, 0.43923888)
+icon = ExtResource("2_orb6n")
+flat = true
+script = ExtResource("2_bfjb8")
+
+[node name="tutorial" type="Button" parent="." unique_id=1921479579]
+offset_left = 21.0
+offset_top = 235.0
+offset_right = 752.0
+offset_bottom = 628.0
+scale = Vector2(0.45538273, 0.42715976)
+icon = ExtResource("4_d51r0")
+flat = true
+script = ExtResource("2_85ejk")
+
+[node name="carro2" type="Sprite2D" parent="." unique_id=1001034698]
+position = Vector2(919.2631, 583.3684)
+scale = Vector2(0.7888889, 0.73021585)
+texture = ExtResource("8_pnh34")
+
+[node name="AnimationPlayer(carro2)" type="AnimationPlayer" parent="carro2" unique_id=562256743]
+libraries/ = SubResource("AnimationLibrary_dbn3w")
+autoplay = &"RESET"
+
+[node name="salir" type="Button" parent="." unique_id=1426491535]
+offset_left = 15.0
+offset_top = 383.0
+offset_right = 1825.0
+offset_bottom = 1264.0
+scale = Vector2(0.17751397, 0.13260391)
+icon = ExtResource("9_bemlw")
+flat = true
+script = ExtResource("6_5r4mj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1148612481]
+position = Vector2(28, 462.00003)
+scale = Vector2(0.40184048, 0.31410256)
+sprite_frames = SubResource("SpriteFrames_lqvlu")
+autoplay = "default"
+frame_progress = 0.7583959
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSprite2D" unique_id=251123312]
+libraries/ = SubResource("AnimationLibrary_cls6s")
+autoplay = &"doctorcaminando"
+
+[node name="ambulancia" type="Sprite2D" parent="." unique_id=376485665]
+position = Vector2(1044, 474.00003)
+scale = Vector2(0.26537254, 0.2912778)
+texture = ExtResource("14_o5t5y")
+
+[node name="carro1" type="Sprite2D" parent="." unique_id=1708125718]
+position = Vector2(718.7999, 536.5999)
+rotation = 3.136059
+scale = Vector2(0.66200745, -1.0664035)
+texture = ExtResource("7_k1r4p")
+
+[node name="AnimationPlayer(carro1)" type="AnimationPlayer" parent="carro1" unique_id=165060409]
+libraries/ = SubResource("AnimationLibrary_bemlw")
+autoplay = &"carro 1 "
+
+[node name="carro3" type="Sprite2D" parent="." unique_id=127358873]
+position = Vector2(398.5, 570.25)
+scale = Vector2(0.84042555, 0.8716814)
+texture = ExtResource("9_r03te")
+
+[node name="AnimationPlayer(carro3)" type="AnimationPlayer" parent="carro3" unique_id=1182036418]
+libraries/ = SubResource("AnimationLibrary_o5t5y")
+autoplay = &"carro3"
+
+[connection signal="pressed" from="nuevapartida" to="nuevapartida" method="_on_pressed"]
+[connection signal="pressed" from="tutorial" to="tutorial" method="_on_pressed"]

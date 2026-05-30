@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://cov8vr8dsbfvp"]
+
+[ext_resource type="Texture2D" uid="uid://d3pcemobkpnod" path="res://imagenes fondo/ChatGPT Image 24 may 2026, 12_56_05 p.m..png" id="1_scc5d"]
+[ext_resource type="Texture2D" uid="uid://c1p0el1osnb3y" path="res://sprites personajes/WhatsApp Image 2026-05-24 at 1.01.07 PM copia.png" id="2_xypya"]
+[ext_resource type="Texture2D" uid="uid://oreorxxiqgog" path="res://sprites botones/2.png" id="3_xypya"]
+[ext_resource type="Script" uid="uid://biyigjxy40o1u" path="res://scripts/progressbarradecarga.gd" id="4_igjq6"]
+
+[node name="Node2D" type="Node2D" unique_id=1753369142]
+script = ExtResource("4_igjq6")
+
+[node name="ChatGptImage24May2026,125605P_m_" type="Sprite2D" parent="." unique_id=97163673]
+position = Vector2(582, 323.5)
+scale = Vector2(0.7578125, 0.6279297)
+texture = ExtResource("1_scc5d")
+
+[node name="WhatsAppImage20260524At1_01_07PmCopia" type="Sprite2D" parent="." unique_id=1640689509]
+position = Vector2(175.99988, 421)
+rotation = -6.29162
+scale = Vector2(-0.8999956, 0.5522318)
+skew = -0.012217305
+texture = ExtResource("2_xypya")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1399611380]
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=938290732]
+light_mask = 3
+offset_left = 53.0
+offset_top = 72.0
+offset_right = 1109.0
+offset_bottom = 196.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel" unique_id=843060070]
+light_mask = 2
+layout_mode = 0
+offset_left = 42.0
+offset_top = 55.0
+offset_right = 1084.0
+offset_bottom = 108.0
+text = "Sabias que el agua moja jajajaj
+"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=249204770]
+position = Vector2(578.00006, 128)
+scale = Vector2(2.5916114, 1)
+texture = ExtResource("3_xypya")
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=145420891]
+offset_top = 529.0
+offset_right = 1159.0
+offset_bottom = 591.0

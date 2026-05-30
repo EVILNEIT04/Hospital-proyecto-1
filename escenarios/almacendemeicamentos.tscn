@@ -1,0 +1,97 @@
+[gd_scene format=3 uid="uid://bf8jjaskabum5"]
+
+[ext_resource type="Texture2D" uid="uid://yua7qk1v188m" path="res://imagenes fondo/a1e3af2c-6fc9-4a65-aa02-681d374a415b.png" id="1_fjqa0"]
+[ext_resource type="Script" uid="uid://b2ddjaurs7xy3" path="res://scripts/buttonconsultorio.gd" id="2_23xoa"]
+[ext_resource type="Texture2D" uid="uid://dnuxa33f7t4bi" path="res://sprites botones/ChatGPT Image 23 may 2026, 04_58_51 p.m..png" id="2_mg8pn"]
+[ext_resource type="Texture2D" uid="uid://dhg5ortbqy24" path="res://sprites medicamentos/ChatGPT_Image_16_may_2026__10_31_35_a.m.-removebg-preview.png" id="4_ma4qf"]
+[ext_resource type="Texture2D" uid="uid://cv4eu43c4i5cb" path="res://sprites botones/ChatGPT Image 23 may 2026, 04_58_56 p.m..png" id="5_ma4qf"]
+[ext_resource type="Script" uid="uid://d1rlxd1o1gmco" path="res://scripts/buttonvacuna.gd" id="6_fjqa0"]
+[ext_resource type="Texture2D" uid="uid://66amarna8jk8" path="res://sprites botones/ChatGPT 1Image 23 may 2026, 04_58_51 p.m..png" id="7_g6cv4"]
+[ext_resource type="Script" uid="uid://byfovwljfhdn7" path="res://scripts/buttonpausa.gd" id="8_yxuuq"]
+[ext_resource type="Script" uid="uid://dmy0niv7rijh3" path="res://scripts/fisicamedicamentos.gd" id="9_g2w3k"]
+[ext_resource type="Texture2D" uid="uid://brn7civ26wnn0" path="res://sprites medicamentos/1778370254745.png" id="9_yxuuq"]
+[ext_resource type="Texture2D" uid="uid://bu7uir4gdpwi7" path="res://sprites medicamentos/1778370296690.png" id="10_xhyb7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mt2ne"]
+size = Vector2(42, 65)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g2w3k"]
+size = Vector2(691, 12)
+
+[node name="Node2D" type="Node2D" unique_id=90573315]
+
+[node name="fondo" type="Sprite2D" parent="." unique_id=1719461817]
+position = Vector2(576, 327)
+scale = Vector2(0.7784471, 0.6267807)
+texture = ExtResource("1_fjqa0")
+
+[node name="Button" type="Button" parent="." unique_id=1414006635]
+offset_left = -26.0
+offset_top = 275.0
+offset_right = 405.0
+offset_bottom = 629.0
+scale = Vector2(0.5300643, 0.54487455)
+icon = ExtResource("2_mg8pn")
+flat = true
+script = ExtResource("2_23xoa")
+
+[node name="caja" type="Sprite2D" parent="." unique_id=1554915088]
+position = Vector2(786, 535)
+scale = Vector2(0.55308884, 0.56639004)
+texture = ExtResource("4_ma4qf")
+
+[node name="Button2" type="Button" parent="." unique_id=360122715]
+offset_left = 939.0
+offset_top = 256.0
+offset_right = 1274.0
+offset_bottom = 649.62854
+scale = Vector2(0.5492265, 0.56599045)
+icon = ExtResource("5_ma4qf")
+flat = true
+script = ExtResource("6_fjqa0")
+
+[node name="Button3" type="Button" parent="." unique_id=1068136944]
+offset_left = 515.0
+offset_top = -6.0
+offset_right = 868.0
+offset_bottom = 366.0
+scale = Vector2(0.4352917, 0.37529486)
+icon = ExtResource("7_g6cv4")
+flat = true
+script = ExtResource("8_yxuuq")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=345635411]
+
+[node name="area2D" type="Area2D" parent="Node2D" unique_id=159847648]
+script = ExtResource("9_g2w3k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/area2D" unique_id=933690400]
+position = Vector2(382, 145.5)
+shape = SubResource("RectangleShape2D_mt2ne")
+
+[node name="obj2" type="Sprite2D" parent="Node2D/area2D" unique_id=829402765]
+position = Vector2(381, 143)
+scale = Vector2(0.08444258, 0.07329548)
+texture = ExtResource("10_xhyb7")
+
+[node name="obj1" type="Sprite2D" parent="Node2D/area2D" unique_id=1557838459]
+position = Vector2(782, 145)
+scale = Vector2(0.10065757, 0.10550064)
+texture = ExtResource("9_yxuuq")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1963557375]
+position = Vector2(-4, 9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1444504288]
+position = Vector2(616, 371)
+shape = SubResource("RectangleShape2D_g2w3k")
+debug_color = Color(0.9495097, 1.92523e-06, 0.5755216, 0.41960785)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=238050726]
+position = Vector2(614, 236)
+shape = SubResource("RectangleShape2D_g2w3k")
+debug_color = Color(0.9532705, 1.4439225e-06, 0.55690515, 0.41960785)
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
+[connection signal="pressed" from="Button3" to="Button3" method="_on_pressed"]

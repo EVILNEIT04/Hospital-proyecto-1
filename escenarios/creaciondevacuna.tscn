@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cds8cjheldhcm"]
+
+[ext_resource type="Texture2D" uid="uid://bkjos055kjjjy" path="res://imagenes fondo/WhatsApp Image 2026-05-24 at 1.21.12 PM.jpeg" id="1_hg20f"]
+[ext_resource type="Texture2D" uid="uid://dnuxa33f7t4bi" path="res://sprites botones/ChatGPT Image 23 may 2026, 04_58_51 p.m..png" id="2_hg20f"]
+[ext_resource type="Script" uid="uid://bdhglgdin5dr2" path="res://scripts/buttonalmacenatras.gd" id="2_yudgo"]
+[ext_resource type="Texture2D" uid="uid://66amarna8jk8" path="res://sprites botones/ChatGPT 1Image 23 may 2026, 04_58_51 p.m..png" id="4_4lm2j"]
+[ext_resource type="Script" uid="uid://byfovwljfhdn7" path="res://scripts/buttonpausa.gd" id="5_mqdo4"]
+
+[node name="Node2D" type="Node2D" unique_id=353769120]
+
+[node name="fondo" type="Sprite2D" parent="." unique_id=364095251]
+position = Vector2(580.5, 322.50003)
+scale = Vector2(0.7754692, 0.60815936)
+texture = ExtResource("1_hg20f")
+
+[node name="Button" type="Button" parent="." unique_id=2040898089]
+offset_left = 27.000004
+offset_top = 46.0
+offset_right = 458.0
+offset_bottom = 400.0
+scale = Vector2(0.5615475, 0.5385108)
+icon = ExtResource("2_hg20f")
+flat = true
+script = ExtResource("2_yudgo")
+
+[node name="Button2" type="Button" parent="." unique_id=612023462]
+offset_left = 515.0
+offset_top = -6.0
+offset_right = 868.0
+offset_bottom = 366.0
+scale = Vector2(0.4352917, 0.37529486)
+icon = ExtResource("4_4lm2j")
+flat = true
+script = ExtResource("5_mqdo4")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]

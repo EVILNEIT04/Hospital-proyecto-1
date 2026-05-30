@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://b7v828vqxjauv"]
+
+[ext_resource type="Texture2D" uid="uid://djimbse4jh755" path="res://imagenes fondo/ChatGPT Image 24 may 2026, 12_49_54 p.m..png" id="1_hggku"]
+[ext_resource type="Script" uid="uid://hwls1phfsxy0" path="res://scripts/buttonsalir.gd" id="2_bd671"]
+[ext_resource type="Script" uid="uid://dahfaqljqqlwf" path="res://scripts/buttonreaunar.gd" id="2_twi6f"]
+
+[node name="Node2D" type="Node2D" unique_id=1074000739]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=311209843]
+position = Vector2(583.5, 324)
+scale = Vector2(0.8295293, 0.57575756)
+texture = ExtResource("1_hggku")
+
+[node name="Button2" type="Button" parent="Sprite2D" unique_id=458093083]
+offset_left = -281.48495
+offset_top = 36.473724
+offset_right = 305.595
+offset_bottom = 221.94736
+flat = true
+script = ExtResource("2_bd671")
+
+[node name="Button" type="Button" parent="Sprite2D" unique_id=501076522]
+offset_left = -277.86847
+offset_top = -165.00003
+offset_right = 298.362
+offset_bottom = 17.368439
+flat = true
+script = ExtResource("2_twi6f")
+
+[connection signal="pressed" from="Sprite2D/Button2" to="Sprite2D/Button2" method="_on_pressed"]
+[connection signal="pressed" from="Sprite2D/Button" to="Sprite2D/Button" method="_on_pressed"]

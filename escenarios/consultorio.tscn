@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://chgn2ruhli78"]
+
+[ext_resource type="Script" uid="uid://cis6ufh02nur" path="res://scripts/animationdesaparecer.gd" id="1_8wqgx"]
+[ext_resource type="Texture2D" uid="uid://7ou8453t85bf" path="res://imagenes fondo/ChatGPT Image 24 may 2026, 12_30_47 p.m..png" id="1_bnt68"]
+[ext_resource type="Script" uid="uid://bgxmm4jqlq04k" path="res://scripts/con_barragameover.gd" id="1_pa5fa"]
+[ext_resource type="Texture2D" uid="uid://66amarna8jk8" path="res://sprites botones/ChatGPT 1Image 23 may 2026, 04_58_51 p.m..png" id="2_17x6r"]
+[ext_resource type="Texture2D" uid="uid://cv4eu43c4i5cb" path="res://sprites botones/ChatGPT Image 23 may 2026, 04_58_56 p.m..png" id="3_gbv67"]
+[ext_resource type="Script" uid="uid://byfovwljfhdn7" path="res://scripts/buttonpausa.gd" id="3_iwikp"]
+[ext_resource type="Script" uid="uid://dql74s5p1qgj2" path="res://scripts/buttondealmacen.gd" id="4_iwikp"]
+[ext_resource type="Script" uid="uid://c1wjladsxra8h" path="res://scripts/buttonnpc1glob.gd" id="7_bnt68"]
+[ext_resource type="Texture2D" uid="uid://bjdpqo86rkwpa" path="res://sprites personajes/ChatG2PT Image 23 may 2026, 05_10_25 p.m..png" id="7_wp1c8"]
+[ext_resource type="Texture2D" uid="uid://p56leypv1f84" path="res://sprites personajes/movimientpng/1779814876405 copia.png" id="8_wp1c8"]
+[ext_resource type="Texture2D" uid="uid://dt1kmd5u17kqx" path="res://imagenes fondo/ChatGPT Image 24 may 2026, 12_30_47 p.m. copia.png" id="9_iwikp"]
+[ext_resource type="Texture2D" uid="uid://bmfscnp4fothf" path="res://sprites personajes/movimientpng/1779814876405.png" id="9_pwgde"]
+[ext_resource type="Texture2D" uid="uid://dxwwdrgb6jjln" path="res://sprites botones/descargar.png" id="9_wp1c8"]
+[ext_resource type="Texture2D" uid="uid://grikfqcqlj4x" path="res://sprites personajes/movimientpng/3.png" id="10_8wqgx"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pa5fa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_wp1c8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_pwgde")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_8wqgx")
+}],
+"loop": false,
+"name": &"nueva animacion",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_8wqgx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1247.0002, 429.00006)]
+}
+
+[sub_resource type="Animation" id="Animation_sngsk"]
+resource_name = "npc1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.13333334, 0.73333335),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1247.0002, 429.00006), Vector2(570, 436)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wd5jw"]
+_data = {
+&"RESET": SubResource("Animation_8wqgx"),
+&"npc1": SubResource("Animation_sngsk")
+}
+
+[node name="Node2D" type="Node2D" unique_id=1551708159]
+script = ExtResource("1_pa5fa")
+metadata/_edit_horizontal_guides_ = [-9.0]
+
+[node name="fondo" type="Sprite2D" parent="." unique_id=309405413]
+position = Vector2(580, 315.00003)
+scale = Vector2(0.7740417, 0.6077505)
+texture = ExtResource("1_bnt68")
+
+[node name="Button" type="Button" parent="." unique_id=1304128000]
+offset_left = 515.0
+offset_top = -6.0
+offset_right = 868.0
+offset_bottom = 366.0
+scale = Vector2(0.4352917, 0.37529486)
+icon = ExtResource("2_17x6r")
+flat = true
+script = ExtResource("3_iwikp")
+
+[node name="Button2" type="Button" parent="." unique_id=701844796]
+offset_left = 954.0
+offset_top = 87.000015
+offset_right = 1289.0
+offset_bottom = 429.0
+scale = Vector2(0.55792964, 0.5605015)
+icon = ExtResource("3_gbv67")
+flat = true
+script = ExtResource("4_iwikp")
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1567877030]
+offset_left = 40.0
+offset_top = 29.0
+offset_right = 287.0
+offset_bottom = 79.0
+value = 100.0
+
+[node name="Node2D" type="Node2D" parent="." unique_id=526153537]
+script = ExtResource("1_8wqgx")
+
+[node name="npc" type="Sprite2D" parent="Node2D" unique_id=280115831]
+position = Vector2(570, 436)
+rotation = -3.1415925
+scale = Vector2(1.2646537, -0.9810138)
+texture = ExtResource("7_wp1c8")
+
+[node name="Button" type="Button" parent="Node2D/npc" unique_id=1397354645]
+offset_left = -32.419983
+offset_top = -87.6644
+offset_right = 29.154846
+offset_bottom = 109.05478
+flat = true
+script = ExtResource("7_bnt68")
+
+[node name="globodetexto" type="Sprite2D" parent="Node2D/npc" unique_id=905061721]
+position = Vector2(-100.4227, -196.73528)
+rotation = -3.1345537
+scale = Vector2(0.22734697, -0.22737078)
+skew = 0.00036728382
+texture = ExtResource("9_wp1c8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Node2D" unique_id=372314694]
+light_mask = 0
+position = Vector2(1247.0002, 429.00006)
+rotation = 3.1256685
+scale = Vector2(1.3002254, -0.9185371)
+skew = -0.0005135536
+sprite_frames = SubResource("SpriteFrames_pa5fa")
+animation = &"nueva animacion"
+autoplay = "nueva animacion"
+frame = 2
+frame_progress = 1.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/AnimatedSprite2D" unique_id=775838591]
+libraries/ = SubResource("AnimationLibrary_wd5jw")
+autoplay = &"npc1"
+
+[node name="Sinfondo" type="Sprite2D" parent="Node2D" unique_id=1510810209]
+position = Vector2(577, 314)
+scale = Vector2(0.7646267, 0.58695644)
+texture = ExtResource("9_iwikp")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
+[connection signal="pressed" from="Node2D/npc/Button" to="Node2D/npc/Button" method="_on_pressed"]
