@@ -1,0 +1,28 @@
+join Jamaiquino center
+Jamaiquino: Hola, hola joven. Clase fila para llegar. Mira hermano, vengo por un favorazo. Mi tata padece de insomnio crónico. Anda mal, bien mal. Siempre toma Tramadol.
+Jamaiquino: Venia a ver si me haces el paro, para firmarme una receta y sacarlas en la farmacia. Hace de cuenta que es tu propio viejo
+Te entiendo, pero la doctora me tiene checado con los medicamentos. Necesito que tu papá venga en persona.
+Jamaiquino: ¿Ideay? Te estoy diciendo que el viejo ni levantarse de la cama puede del cansancio. ¿Lo voy a traer a aguantar este calorón solo por una pastilla?
+No seas mala onda, chavalo. Yo sé que vos tenés buen corazón
+- Dejame Buscarlo en sistema, haber si sale.
+	Jamaiquino: Si, si. Juan Carlos mendoza se llama. Nos acabamos de pasar para aca somos de Matagalpa.
+	Ah esta bien, si sale. (paciente con asma)
+	- Todo bien entonces, dejame los busco, para dartelo.
+		Jamaiquino: Gracias hermanito
+	- Antes de terminar, como ha seguido de el asma tu papa.
+		Jamaiquino: Esta sano, es un roble. Mas que nada es en las noches los ataques. Se perfectamente como hay que cuidarlo.
+		- Dar medicina
+			Espero que tu papa se mejore de todo corazon. Para la proxima intenta traerlo. No te esperes a que empeore.
+		- No dar medicina
+			El asma de su padre estrecha las vías respiratorias, obligando a sus músculos a trabajar el doble para meter oxígeno. Si le doy Tramadol, el fármaco causa una sedación profunda y relaja todo el cuerpo de golpe.
+			Si su cuerpo se relaja de golpe, sus pulmones no podrán hacer la fuerza para meter oxígeno... y morirá asfixiado mientras duerme...
+- No. O viene el señor o no te lo doy.
+	Jamaiquino: ¡Ideay, maje! ¡No me podés hacer eso! Te estoy diciendo que son para mi papá, ¡el viejo se está muriendo del dolor en la casa, te lo juro por Dios! ¡No seas tan desalmado, chavalo, haceme ese sello ya!
+	No puedo hacer eso.
+	Jamaiquino: ¡Es que... es que son para mí, hombré! ¡Yo las necesito! ¡Me duele todo, siento que me voy a morir si no me das esa vara! ¡Por favor, hermano, haceme la campaña, solo esta vez!
+	Primero dijiste que eran para tu papá y ahora que son para vos. No te voy a dar nada.
+	leave Jamaiquino
+	join Director center
+	Director: Aprovechando que no me vio en el pasillo.
+	Director: No le pongás mente, muchacho. Ese tipo siempre anda sacando pastillas en toda Managua con el mismo cuento. Te aclaro de una vez\: la próxima vez ni le hagás caso, lo mandás a sacar con el guarda de la entrada.
+	Director: Esta bueno que no te dejes engatuzar.

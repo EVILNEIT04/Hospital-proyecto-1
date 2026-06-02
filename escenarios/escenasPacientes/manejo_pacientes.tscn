@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bf8qv7w1juiy"]
+
+[ext_resource type="Script" uid="uid://cshvdcjsuep4k" path="res://escenarios/escenasPacientes/manejo_pacientes.gd" id="1_e5muh"]
+[ext_resource type="Texture2D" uid="uid://ci0ax7lkr0exi" path="res://imagenes fondo/Fondos (camila)/recepciónCOMPLETA.png" id="2_guqyw"]
+[ext_resource type="Texture2D" uid="uid://dexlc3xxds7i0" path="res://imagenes fondo/Fondos (camila)/fondorecepcion.png" id="2_so7m4"]
+
+[node name="manejoPacientes" type="Node2D" unique_id=809205619]
+script = ExtResource("1_e5muh")
+
+[node name="fondoConsulta" type="TextureRect" parent="." unique_id=566928370]
+offset_left = 162.0
+offset_right = 1068.0
+offset_bottom = 515.0
+texture = ExtResource("2_so7m4")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1187157744]
+offset_right = 1149.6111
+offset_bottom = 647.0
+texture = ExtResource("2_guqyw")
+expand_mode = 3
+
+[node name="Control" type="Control" parent="." unique_id=845270923]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
