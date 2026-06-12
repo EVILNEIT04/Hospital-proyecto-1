@@ -1,0 +1,48 @@
+[background arg="#000000ff" fade="0.0"]
+En nuestras etapa final de nuestra universidad. se nos ha exigido realizar practicas
+Muchos de mis compañeros y amigos fueron a farmacias populares que proporcionaba la universidad. Envie hace poco un correo a un hospital para ver si me aceptan como pasante…
+[wait time="1.0"]
+audio "res://Audio/notification.mp3"
+Uh?
+[wait time="1.0"]
+[background arg="res://ImagenesVarias/PlaceHolderEmail.jpeg" fade="1.0"]
+# Basicamente Es una imagen de un Email. No hay mucho que comentar
+Eh- ¡OE me aceptaron en el hospital! ¡Por fin voy a poder realizar mis pasantías!
+Será mejor que vaya lo más ante posible al hospital para presentarme…
+[background arg="#000000ff" fade="0.5" transition="Simple Fade"]
+[wait time="2.5"]
+[background arg="res://imagenes fondo/7a7fbf85-55a3-4ce4-ac3b-3260d7efbf99.png" fade="0.5"]
+[wait time="0.5"]
+Entonces este es el hospital en el que voy a hacer mis practicas… debería de hablar con el director
+¿Sera que se encuentra en el lobby?
+[background arg="#000000ff" fade="0.5"]
+audio -
+[wait time="0.7"]
+[background arg="res://imagenes fondo/Fondos (camila)/fondorecepcion.png" fade="0.5"]
+¿Donde estara...?
+join Director leftmost
+Director: Ah, ¿tu debes de ser el pasante no? Recuérdame ¿Cuál era tu nombre?
+[text_input text="¿Cual es tu nombre?" var="Nombre.NameUser"]
+Mi nombre es\: {Nombre.NameUser}.
+Director: Ah {Nombre.NameUser} era. Si si ya te recuerdo bien. Dime ¿Puedes iniciar a trabajar en la farmacia en estos momentos?
+- Si, puedo iniciar inmediatamente
+	Director: Perfecto. Entonces sígueme
+	[background arg="#000000ff" fade="0.5"]
+- No, no puedo tengo cosas que hacer
+	Director: Ah. Lastima porque igual te necesito para ahora {Nombre.NameUser}. Estoy seguro de que las cosas que tienes que hacer pueden esperar.
+	Pero-
+	Director: Pero nada, ¿quieres estudiar? Ven conmigo ahora.
+leave Director [animation="Slide To Left"]
+[background arg="#000000ff" fade="0.7"]
+[wait time="1.5"]
+[background arg="res://imagenes fondo/Fondos (camila)/fondorecepcion.png" fade="0.5"]
+[background arg="res://imagenes fondo/Fondos (camila)/recepciónCOMPLETA.png" fade="0.5"]
+Director: Te voy a resumir muy rapidito todo. Toda la información por lo general esta en esta computadora.
+Director: Puedes verificar las recetas de los pacientes, buscar a doctores dentro de ella y una pequeña Guia para esos pacientes que buscan pastillas de uso libre,
+Director: Ya sabes, sea un acetaminofén para el dolor de cabeza o cosas así.
+Director: Es importante que siempre verifiques las recetas. Porque esos son medicamentos de laboratorios y no se pueden vender a cualquiera.
+Director: Curiosea la computadora antes de que vengan pacientes. Yo me tengo que retirar.
+¿Y eso es todo? ¿No voy a estar supervisado?
+Director: Claro que si. Al final del día va a venir una enfermera y te va a decir como lo hiciste en el día.
+Director: Siempre estarás vigilado niño. Trata no equivocarte
+[background arg="#000000ff" fade="0.5"]
