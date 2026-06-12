@@ -21,11 +21,16 @@ Dialogic="*uid://ds2q0uclmolvu"
 [dialogic]
 
 directories/dch_directory={
+"Adolecente": "res://Character - ( camila TIME LINES)/Adolecente.dch",
 "Director": "res://Character - ( camila TIME LINES)/Director.dch",
 "Don Jose": "res://Character - ( camila TIME LINES)/Don Jose.dch",
+"DonLevi": "res://Character - ( camila TIME LINES)/DonLevi.dch",
+"Donovan ": "res://Character - ( camila TIME LINES)/Donovan .dch",
 "Jamaiquino": "res://Character - ( camila TIME LINES)/Jamaiquino.dch"
 }
 directories/dtl_directory={
+"NewGame": "res://NewGame.dtl",
+"TimeLineAdolescente": "res://TIMELINES-(camila)/TimeLineAdolescente.dtl",
 "timeline1": "res://TIMELINES-(camila)/timeline1.dtl",
 "timeline2": "res://TIMELINES-(camila)/timeline2.dtl"
 }
@@ -36,6 +41,9 @@ layout/style_directory={
 layout/style_list=["res://Styles-(camila TIMELINES STYLES )/estilotexo.tres"]
 layout/default_style="res://Styles-(camila TIMELINES STYLES )/estilotexo.tres"
 variables={
+"Nombre": {
+"NameUser": ""
+},
 "Pastillas": {
 "DORMIR": ""
 }
